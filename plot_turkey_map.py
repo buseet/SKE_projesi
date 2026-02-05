@@ -4,8 +4,6 @@ import matplotlib.pyplot as plt
 import os
 import matplotlib.patches as mpatches  # To create custom legend handles
 
-plt.xkcd()
-
 
 def make_plot_from_file(
     file, output_name="iller_harita_subat2026.png"
@@ -85,3 +83,6 @@ def make_plot_from_file(
     plt.axis('off')  # Optionally turn off the axis
     plt.savefig(output_name, dpi=300, bbox_inches='tight')
     # plt.show()
+
+if __name__ == "__main__":
+    make_plot_from_file("iller_liste_SKE.xlsx", "out.png")
