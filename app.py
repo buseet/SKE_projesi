@@ -16,6 +16,7 @@ def process_spreadsheet():
     output_name = f"iller_harita_subat_{today_str}.png"
     
     make_plot_from_file(file, output_name)
+    
     return send_file(
         output_name,
         mimetype="image/png",

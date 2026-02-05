@@ -1,9 +1,10 @@
-import geopandas as gpd
-import pandas as pd
+import geopandas as gpd  # type: ignore
+import pandas as pd  # type: ignore
 import matplotlib.pyplot as plt
 import os
 import matplotlib.patches as mpatches  # To create custom legend handles
 
+plt.xkcd()
 
 
 def make_plot_from_file(
