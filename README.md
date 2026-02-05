@@ -17,7 +17,7 @@
  ssh USERNAME@donfax.com
 
  # navigate to the app git repo
- cd ske.donfax.com/SKE_projesi
+ cd /home/jcranney/ske.donfax.com/SKE_projesi
  # get latest version from github
  git pull
  # go up to app root directory
