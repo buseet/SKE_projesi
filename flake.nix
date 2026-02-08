@@ -68,6 +68,7 @@
             else
               export PATH="$PATH:$PUB_CACHE/bin"
             fi
+            zsh
           '';
         };
       }
