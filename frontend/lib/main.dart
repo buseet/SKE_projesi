@@ -54,7 +54,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   void initState() {
     super.initState();
-    pb = PocketBase("http://$baseUrl:6002");
+    pb = PocketBase("https://skedb.$baseUrl");
     records = pb.collection('provinces').getFullList();
   }
 
@@ -65,7 +65,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   Future<Uint8List> createMap(List<Map<String, dynamic>> data) async {
-    var url = Uri.http('$baseUrl:6003', '/');
+    var url = Uri.https('skebe.$baseUrl', '/');
     var response = await http.post(
       url,
       body: jsonEncode(data),
